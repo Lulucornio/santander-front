@@ -1,0 +1,29 @@
+/*Jerarquía de estilos:
+wl último diseño que se queda es el último que se define
+y no meterlo en la misma hoja del html
+*/
+
+
+h1 {
+    color:blue;
+    /*Comentario en una hoja de estilos*/
+}
+
+h2 {
+    color: #46484c;
+}
+
+p {
+    color: #8b8b8bcc;
+}
+
+button {
+    color: #fff;
+    background-color: #025157;
+    background-image: url('');
+
+}
+
+body {
+    background-color: #fffbf7;
+}
