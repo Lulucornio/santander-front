@@ -5,13 +5,29 @@ y no meterlo en la misma hoja del html
 
 
 h1 {
-    color:blue;
+    color: orange;
     /*Comentario en una hoja de estilos*/
 }
+
+#titulo {
+    color:blueviolet;
+    text-align: center;
+}
+
 
 h2 {
     color: #46484c;
 }
+
+h3 {
+    color: rebeccapurple;
+
+}
+
+h4 {
+    color: palevioletred;
+}
+
 
 p {
     color: #8b8b8bcc;
@@ -20,10 +36,20 @@ p {
 button {
     color: #fff;
     background-color: #025157;
-    background-image: url('');
+    
 
 }
 
 body {
-    background-color: #fffbf7;
+    
+    background-image: url('fondo_cerezos.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#titulo_formulario {
+    color:rgb(40, 51, 21);
+    font-size: larger;
+    
 }
