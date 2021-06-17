@@ -42,14 +42,79 @@ button {
 
 body {
     
-    background-image: url('fondo_cerezos.jpg');
+    /*background-image: url('fondo_cerezos.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover;*/
+    background-color: pink;
 }
 
 #titulo_formulario {
     color:rgb(40, 51, 21);
     font-size: larger;
     
+}
+
+.header {
+    /*Top, right, botton, left: Tip de Manecillas*/
+    margin: 40px 20px 0px 20px;
+    
+   /* margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;*/
+    font-size: 0;
+    line-height: 45px;
+    height: 45px;
+  }
+
+li {
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.header > * { /*Todos los hijos del header les aplicará ese diñseo*/
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: middle;
+    height: 100%;
+    line-height: 45px;
+}
+
+.logo {
+    width: 15%;
+    /*background-color: plum;*/
+}
+
+.navbar {
+    width: 70%;
+    /*text-align: center;*/
+    text-align: left ;
+    color: #025157;
+    font-family: sans-serif;
+    
+}
+
+.actions {
+    width: 15%;
+    /*text-align: right;*/
+    text-align: left;
+    font-size: 14px;
+}
+
+.actions a {
+    color: #67b54b;
+}
+
+.actions button{
+    background-color: #67b54b;
+    color: white;
+    padding: 12px 14px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.actions > * {
+    margin-right: 10px;
+    margin-left: 10px;
 }
