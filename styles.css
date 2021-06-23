@@ -1,6 +1,5 @@
 /*Jerarquía de estilos:
-wl último diseño que se queda es el último que se define
-y no meterlo en la misma hoja del html
+El último diseño que se queda es el último que se define.
 */
 
 
@@ -36,8 +35,9 @@ p {
 button {
     color: #fff;
     background-color: #025157;
-    
-
+    padding: 12px 14px;
+    border: 0px;
+    border-radius: 5px;
 }
 
 body {
@@ -47,12 +47,16 @@ body {
     background-attachment: fixed;
     background-size: cover;*/
     background-color: pink;
+    
 }
 
 #titulo_formulario {
     color:rgb(40, 51, 21);
     font-size: larger;
     
+}
+#registro {
+    align-content: center;
 }
 
 .header {
@@ -63,7 +67,8 @@ body {
     margin-left: 20px;
     margin-right: 20px;*/
     font-size: 0;
-    line-height: 45px;
+    font-family: sans-serif;
+
     height: 45px;
   }
 
@@ -73,7 +78,7 @@ li {
     margin-right: 25px;
 }
 
-.header > * { /*Todos los hijos del header les aplicará ese diñseo*/
+.header > * { /*Todos los hijos del header les aplicará ese diseño*/
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
@@ -86,12 +91,17 @@ li {
     /*background-color: plum;*/
 }
 
+.logo > img {
+    height: 100%;
+}
+
 .navbar {
     width: 70%;
     /*text-align: center;*/
     text-align: left ;
     color: #025157;
     font-family: sans-serif;
+   
     
 }
 
@@ -124,14 +134,21 @@ li {
     width: 70%;
     margin: 100px auto;
     align-items: center;
+    justify-content: center;
 }
 
+.publicacion {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+}
 
 .publicacion h2 {
   font-family: "Alegreya", serif;
   font-size: 40px;
   line-height: 48px;
   color: #025157;
+
 }
 
 .publicacion > p {
@@ -159,11 +176,155 @@ li {
 
 
 
-.fixed-header{
+.fixed-header {
     position: fixed;
     background-color: white;
     top: 0;
     left: 0;
     right: 0;
-    height: 45px;
+    height: 100px;
+    z-index: 2;
+}
+
+.case-study {
+    background-color: #a1d683;
+    display: flex;
+    padding: 5% 15%;
+    align-items: center;
+    width: 100%;
+    
+}
+ .case-study img {
+     width: 80%;
+ }
+
+.who-uses-matcha {   
+    vertical-align: middle;
+    width: 50%;
+    height: 80%;
+}
+
+.who-uses-matcha h3{
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+}
+
+.who-uses-matcha p{
+    color: #343a40;
+}
+
+.carrousel {
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    width: 300px;
+    min-width: 160px;
+    height: 100%;
+    margin: 15%;
+    
+
+}
+
+.carrousel img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.carrousel h4 {
+    color: #025157;
+    font-size: 18px
+}
+.carrousel p {
+    color: black;
+    font-size: 25px;
+}
+
+.carrousel button {
+    width: 80%;
+    margin: 20px 20px;    
+}
+
+.formulario-registro {
+    background-color: #a1d683;
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px 50px;   
+}
+.encabezado-carrousel {
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+}
+
+.logo-circular {
+    border-radius: 50%;
+    background-color: #f9da73;
+    align-items: center;
+    display: flex;
+
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.logo-circular img {
+    max-width: 75%;
+    max-height: 35%;
+  
+}
+
+.statistics-img {
+    display: flex;
+    align-items: center;
+    margin: auto 20px;
+}
+
+.statistics-img p {
+    color: gray;
+    font-size: 12px;
+}
+
+.statistics-img img {
+    margin-right: 20px;
+    width: 26px;
+    height: 26px;
+}
+
+.texto-carrousel {
+    margin: 20px;
+}
+
+.who-uses-matcha div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.who-uses-matcha button {
+    width: 25%;
+}
+
+
+.start-publishing {
+    display: flex;
+}
+
+.start-publishing input {
+    border-radius: 5px;
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 60%;
+    
+}
+
+.start-publishing button {
+    width: 30%;
 }
