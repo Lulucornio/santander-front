@@ -328,3 +328,25 @@ li {
 .start-publishing button {
     width: 30%;
 }
+
+
+
+.features {
+    display: grid;
+    /*grid-template-columns: 100px 300px;*/
+    /*grid-template-columns: repeat(2, 300px);*/
+    /*grid-template-columns: 500px 1fr;*/
+    height: 660px;
+    /*grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);*/
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+}
+
+
+.feature-art {
+    background-color: lightcyan;
+    margin: 10px;
+    width: 40%;
+    height: 50px;
+}

@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    /*flex-direction: column;*/
+    background-color: blue;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+/*.item iría a cualquiera y > es a los hijos directos*/
+.container > .item {
+    background-color: gray;
+    width: 30%;
+    height: 30px;
+}
+
+.main {
+    display: flex;
+    width: 500px;
+
+}
+/*Multiplicador del espacio disponible*/
+.main div:nth-of-type(1){
+    flex-grow: 1;
+}
+
+.main div:nth-of-type(4){
+    flex-grow: 1;
+}
