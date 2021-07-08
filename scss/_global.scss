@@ -1,0 +1,25 @@
+/** _global.scss */
+/*Cuando es con guión bajo es de privado y una buena práctica, no se debe usar directamente*/
+/** colores */
+
+
+$dark-green-title: #025157;
+$dark-green-text: #135359;
+$white: #ffffff;
+$gray-title-cards: #4a4a4a;
+$dark-gray-text: #4a4a4a;
+$green-links: #67b54b;
+$light-gray: #979797;
+/** fuentes */
+$font-title: "Alegreya", serif;
+
+/** placeholders */
+/*Paquetes con ciertos estilos ya definidos*/
+%base-title {
+  font-family: $font-title;
+  color: $dark-green-text;
+}
+
+
+/*$ es para variable, % es un mixing, tipo una plantilla con variables que toman valores de variables*/
+ /*Este archivo es le que se modifica cuando entra un nuevo gobierno xD*/

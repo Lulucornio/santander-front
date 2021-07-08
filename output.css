@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/** _global.scss */
+/*Cuando es con guión bajo es de privado y una buena práctica, no se debe usar directamente*/
+/** colores */
+/** fuentes */
+/** placeholders */
+/*Paquetes con ciertos estilos ya definidos*/
+.blog .title {
+  font-family: "Alegreya", serif;
+  color: #135359;
+}
+
+/*$ es para variable, % es un mixing, tipo una plantilla con variables que toman valores de variables*/
+/*Este archivo es le que se modifica cuando entra un nuevo gobierno xD*/
+/*Todo lo que está en global se importa*/
+/*Diferencia entre 100% y unset*/
+.blog {
+  background-color: #ffffff;
+  max-width: unset;
+  padding: 5% 10%;
+  display: flex;
+}
+.blog .title {
+  /*Usar lo de base title*/
+}
+.blog .process-list {
+  margin-top: 40px;
+  margin-bottom: 36px;
+  /*Los & se usan para ser más específicos*/
+}
+.blog .process-list .process {
+  margin-bottom: 25px;
+}
+.blog .process-list .process > div > h3 {
+  color: #025157;
+  margin-bottom: 0;
+  font-size: 30px;
+}
+.blog .process-list .process > div > p {
+  color: #135359;
+  margin: 0;
+}
+.blog .process-list .process .process-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  text-align: center;
+}
+.blog .process-list .process .process-icon img {
+  height: 100%;
+}
+.blog .process {
+  display: flex;
+}
+.blog .col {
+  /*float: left;*/
+  width: 33%;
+  padding: 20px;
+}
+.blog .col .card {
+  /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);*/
+  /*transition: 0.3s;*/
+  width: 100%;
+}
+.blog .col .card .card-body {
+  padding: 20px;
+}
+.blog .col .card .card-body .card-title {
+  color: #4a4a4a;
+  font-weight: 200;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
+}
+.blog .col .card .card-body .metadata {
+  color: #4a4a4a;
+  margin-bottom: 14px;
+}
+.blog .col .card .card-body .metadata .category {
+  color: #67b54b;
+  font-weight: 500;
+}
+.blog .col .card .card-body .metadata .read-time {
+  color: #979797;
+  font-weight: 500;
+}
+.blog .col .card .card-body .card-text {
+  color: #4a4a4a;
+}
+.blog .col .card .card-body .card-text .read-more {
+  color: #4a4a4a;
+  text-decoration: underline;
+}
+.blog .col .card .card-body .card-text a {
+  color: #4a4a4a;
+}
+.blog .col .card .card-body .author {
+  display: flex;
+}
+.blog .col .card .card-body .author img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.blog .col .card .card-body .author p {
+  margin-left: 8px;
+  font-weight: 500;
+  color: #4a4a4a;
+  position: relative;
+}
+
+@media (max-width: 575px) {
+  .blog .row {
+    display: grid;
+  }
+  .blog .row .col {
+    float: left;
+    width: 90%;
+    padding: 5%;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */
